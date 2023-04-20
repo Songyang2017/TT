@@ -41,7 +41,7 @@ var app = new Vue({
 	computed:{
 		ha:function(){
 			for(var i = 0;i<this.pic.length;i++){
-				this.arr.push(this.pic[i].url)
+				this.arr.push(this.pic[i].url.replace('http:', 'https:'))
 			}
 			return this.arr
 		}
