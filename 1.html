@@ -38,6 +38,9 @@ var app = new Vue({
 		pic:add.album.pic,
 		arr:[]
 	},
+	mounted(){
+		console.log('picture', ha)
+	},
 	computed:{
 		ha:function(){
 			for(var i = 0;i<this.pic.length;i++){
